@@ -14,6 +14,7 @@
 !all_rag_techniques
 !data
 !evaluation
+!rag_systems
 !images
 !*.yml
 !.github
