@@ -139,8 +139,8 @@ def retrieve_context_per_question(question, chunks_query_retriever):
         - A list of unique URLs from the metadata of the relevant documents.
     """
 
-    # Retrieve relevant documents for the given question
-    docs = chunks_query_retriever.get_relevant_documents(question)
+    # Retrieve relevant documents for the given question（新版本 LangChain 用 invoke 替代 get_relevant_documents）
+    docs = chunks_query_retriever.invoke(question)
 
     # Concatenate document content
     # context = " ".join(doc.page_content for doc in docs)
@@ -178,8 +178,10 @@ def create_question_answer_from_context_chain(llm):
     )
 
     # Create a chain by combining the prompt template and the language model
+    # method='function_calling' 避免 gpt-4-turbo-preview 等模型触发 Structured Output 警告
     question_answer_from_context_cot_chain = question_answer_from_context_prompt | question_answer_from_context_llm.with_structured_output(
-        QuestionAnswerFromContext)
+        QuestionAnswerFromContext, method="function_calling"
+    )
     return question_answer_from_context_cot_chain
 
 

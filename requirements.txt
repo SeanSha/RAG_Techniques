@@ -1,0 +1,45 @@
+# ============================================================
+# simple_rag.py 及项目核心依赖（每个包的用途说明见下方注释）
+# ============================================================
+
+# 从 .env 文件加载环境变量，用于读取 OPENAI_API_KEY 等配置
+python-dotenv>=1.0.0
+
+# LangChain 社区扩展：PDF 加载器 PyPDFLoader、向量库 FAISS 等
+langchain-community>=0.0.20
+
+# 文本分块器，如 RecursiveCharacterTextSplitter，把长文档切成小段
+langchain-text-splitters>=0.2.0
+
+# OpenAI 与 LangChain 集成：嵌入模型 OpenAIEmbeddings、对话模型等
+langchain-openai>=0.0.5
+
+# LangChain 核心：Prompt 模板、输出解析器、链式调用等基础组件
+langchain-core>=0.2.0
+
+# 数据校验与配置模型，LangChain 里大量用于定义输入/输出结构
+pydantic>=2.0
+
+# OpenAI 官方 API 客户端，用于调用嵌入、聊天等接口（含错误类如 RateLimitError）
+openai>=1.0
+
+# BM25 关键词检索算法，用于稀疏检索、融合检索等 RAG 技巧
+rank_bm25>=0.2.2
+
+# PDF 解析库（代码里以 fitz 导入），用于从 PDF 提取文本与结构
+PyMuPDF>=1.23.0
+
+# LangChain PyPDFLoader 实际使用的 PDF 解析后端（加载 PDF 时必需）
+pypdf>=4.0.0
+
+# 数值计算，向量运算、相似度计算等会用到
+numpy>=1.24.0
+
+# FAISS 向量库（LangChain FAISS 后端）：faiss-cpu 通用；有 NVIDIA GPU 可用 faiss-gpu 替代
+faiss-cpu>=1.7.4
+
+# ------------------------------------------------------------
+# 仅在使用 simple_rag.py --evaluate 做 RAG 评估时需要安装
+# ------------------------------------------------------------
+# RAG 评估指标（忠实度、上下文相关性等）与测试框架
+deepeval>=0.21.0
