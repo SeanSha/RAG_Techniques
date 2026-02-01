@@ -1,0 +1,10 @@
+# Simple RAG Cloud：向量本地，LLM 云端 Groq（GPU 在云端）
+python-dotenv>=1.0.0
+langchain-community>=0.0.20
+langchain-text-splitters>=0.2.0
+langchain-core>=0.2.0
+langchain-groq>=0.2.0
+pydantic>=2.0
+pypdf>=4.0.0
+faiss-cpu>=1.7.4
+sentence-transformers>=2.2.0

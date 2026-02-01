@@ -1,0 +1,55 @@
+{
+  "questions": [
+    "What is the main cause of climate change?",
+    "How does deforestation affect the climate?",
+    "What is the term for the amount of heat trapped in the Earth's atmosphere due to greenhouse gases?",
+    "Which of the following is a consequence of rising sea levels caused by climate change?",
+    "What is the name of the international agreement aimed at reducing greenhouse gas emissions?"
+  ],
+  "answers": [
+    "The primary cause of recent climate change is the increase in greenhouse gases in the atmosphere.",
+    "Deforestation reduces the number of trees that can absorb CO2 from the atmosphere, releasing stored carbon back into the atmosphere and exacerbating the greenhouse effect.",
+    "\"Greenhouse effect.\"",
+    "Coastal erosion, threatening homes, infrastructure, and ecosystems.",
+    "Kyoto Protocol"
+  ],
+  "results": [
+    "{\"relevance\": 5, \"completeness\": 4, \"conciseness\": 4}",
+    "{\"relevance\": 5, \"completeness\": 4, \"conciseness\": 4}",
+    "{\"relevance\": 5, \"completeness\": 4, \"conciseness\": 4}",
+    "{\"relevance\": 5, \"completeness\": 4, \"conciseness\": 4}",
+    "{\"relevance\": 5, \"completeness\": 2, \"conciseness\": 4}"
+  ],
+  "average_scores": {
+    "relevance": 5.0,
+    "completeness": 3.6,
+    "conciseness": 4.0
+  },
+  "items": [
+    {
+      "question": "What is the main cause of climate change?",
+      "answer": "The primary cause of recent climate change is the increase in greenhouse gases in the atmosphere.",
+      "evaluation": "{\"relevance\": 5, \"completeness\": 4, \"conciseness\": 4}"
+    },
+    {
+      "question": "How does deforestation affect the climate?",
+      "answer": "Deforestation reduces the number of trees that can absorb CO2 from the atmosphere, releasing stored carbon back into the atmosphere and exacerbating the greenhouse effect.",
+      "evaluation": "{\"relevance\": 5, \"completeness\": 4, \"conciseness\": 4}"
+    },
+    {
+      "question": "What is the term for the amount of heat trapped in the Earth's atmosphere due to greenhouse gases?",
+      "answer": "\"Greenhouse effect.\"",
+      "evaluation": "{\"relevance\": 5, \"completeness\": 4, \"conciseness\": 4}"
+    },
+    {
+      "question": "Which of the following is a consequence of rising sea levels caused by climate change?",
+      "answer": "Coastal erosion, threatening homes, infrastructure, and ecosystems.",
+      "evaluation": "{\"relevance\": 5, \"completeness\": 4, \"conciseness\": 4}"
+    },
+    {
+      "question": "What is the name of the international agreement aimed at reducing greenhouse gas emissions?",
+      "answer": "Kyoto Protocol",
+      "evaluation": "{\"relevance\": 5, \"completeness\": 2, \"conciseness\": 4}"
+    }
+  ]
+}

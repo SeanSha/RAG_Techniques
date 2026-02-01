@@ -1,0 +1,9 @@
+# Simple RAG 子系统独立依赖（可与项目根 requirements.txt 并存）
+python-dotenv>=1.0.0
+langchain-community>=0.0.20
+langchain-text-splitters>=0.2.0
+langchain-openai>=0.0.5
+langchain-core>=0.2.0
+pydantic>=2.0
+pypdf>=4.0.0
+faiss-cpu>=1.7.4

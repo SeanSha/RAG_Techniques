@@ -1,24 +1,36 @@
 # Ignore everything by default
 *
 
-# Allow only specific file types
+# Allow only specific file types (root)
 !*.py
 !*.md
 !*.txt
 !*.ipynb
-!*jpeg
+!*.jpeg
+!*.jpg
 !*svg
 !*.png
 !LICENSE
 !*.gif
-!all_rag_techniques
-!data
-!evaluation
-!rag_systems
-!images
 !*.yml
 !.github
 !.github/workflows
+
+# Allow directories and their contents
+!all_rag_techniques
+!all_rag_techniques/**
+!data
+!data/**
+!evaluation
+!evaluation/**
+!images
+!images/**
+!rag_systems
+!rag_systems/**
+
+# Exclude .env from rag_systems (secrets)
+rag_systems/**/.env
+.env
 
 # remove specific files
 __pycache__/
